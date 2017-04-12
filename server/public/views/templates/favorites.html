@@ -1,0 +1,23 @@
+<!-- shows details of selected movie from search results -->
+<div class="container" ng-controller="FavoritesController">
+  <div class="row">
+    <div class="detail">
+      <img ng-src="{{detailObject.details.Poster}}" class="img-responsive  detail-img pull-left"/><br>
+
+          <h3>{{detailObject.details.Title}}</h3>
+          <button class="btn btn-default btn-sm" ng-click="addToFavorites(detailObject)">Add To Favorites</button>
+          <br />
+      <p>{{detailObject.details.Plot}}</p>
+
+
+    </div>
+<!-- displays favorites -->
+  <h2>Favorites</h2>
+  <br />
+  <div class="row" ng-repeat="favorite in favoritesObject.favoritesList | orderBy:'-'">
+      <h3>{{favorite.title}}</h3>
+      <p>{{favorite.description}}</p>
+      <span class="pull-left">{{favorite.director}}</span>
+      <span class="pull-right">{{favorite.duration}}</span>
+  </div>
+</div>

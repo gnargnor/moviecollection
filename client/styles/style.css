@@ -1,0 +1,59 @@
+html{
+  position: relative;
+  min-height:100%
+}
+
+body {
+  background-color: lightblue;
+  color: #3d231b;
+  height:100%;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 20px;
+}
+.selected {
+  width:75%;
+
+}
+
+.detail {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.detail-img {
+  padding: 10px;
+}
+
+.movie-nav > ul > li {
+  width: 100px;
+  display: inline-block;
+  margin: auto;
+}
+
+.movie-nav {
+  text align: center;
+}
+h1 {
+  text-align: left;
+}
+
+/*img {
+  height:300px;
+  width:200px;
+  object-fit: cover;
+}*/
+
+.result-column {
+  width: 33%
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  line-height: 20px; /* Vertically center the text there */
+  text-align: center;
+
+}
